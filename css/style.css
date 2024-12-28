@@ -31,8 +31,18 @@
 *,
 *::before,
 *::after {
+  touch-action: auto;  /* Ensure touch scrolling is enabled */
+
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  * {
+    touch-action: auto;  /* Ensure touch scrolling is enabled */
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;  /* Hide horizontal overflow */
+  overflow-y: auto;    /* Allow vertical scrolling */
+}
 
 html {
   font-family: sans-serif;
@@ -41,7 +51,6 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-
 @-ms-viewport {
   width: device-width; }
 
@@ -7553,6 +7562,7 @@ h1, h2, h3, h4, h5,
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
+      min-height: 100vh;  /* Full viewport height */
       background-position: center center;
       height: 900px;
       position: relative;
@@ -7567,7 +7577,10 @@ h1, h2, h3, h4, h5,
         left: 0;
         right: 0;
         background: #000000;
-        opacity: .2; }
+        opacity: .2;
+        pointer-events: none; /* Ensure it doesn't block interactions */
+      
+      }
       .owl-carousel.home-slider .slider-item .slider-text {
         height: 900px;
         position: relative; }
