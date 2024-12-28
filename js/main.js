@@ -71,6 +71,8 @@
 	    animateIn: 'fadeIn',
 	    nav:false,
 	    dots: false,
+		touchDrag: true,       // Enable touch drag (for mobile)
+		mouseDrag: true,       // Enable mouse drag (for desktop)
 	    autoplayHoverPause: false,
 	    items: 1,
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],

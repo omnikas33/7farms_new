@@ -7942,6 +7942,9 @@ h1, h2, h3, h4, h5,
     .room .text ul.list {
       padding: 0; }
       .room .text ul.list li {
+        margin-left: 5px;
+        padding: 0.1em;
+        text-align: start;
         list-style: none;
         color: #000000;
         font-size: 14px; }
@@ -8111,11 +8114,11 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 6em 0;
+  padding: 4em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 4em 0; } }
   @media (min-width: 768px) {
     .ftco-section .container-fluid {
       padding: 0 4em; } }
