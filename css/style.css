@@ -31,18 +31,9 @@
 *,
 *::before,
 *::after {
-  touch-action: auto;  /* Ensure touch scrolling is enabled */
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  * {
-    touch-action: auto;  /* Ensure touch scrolling is enabled */
-}
-html, body {
-  height: 100%;
-  overflow-x: hidden;  /* Hide horizontal overflow */
-  overflow-y: auto;    /* Allow vertical scrolling */
-}
 
 html {
   font-family: sans-serif;
